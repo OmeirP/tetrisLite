@@ -4,7 +4,7 @@ import random
 
 pygame.init()
 
-display_width = 800
+display_width = 800 
 display_height = 600
 gameDisplay = pygame.display.set_mode((display_width,display_height))
 
@@ -105,7 +105,14 @@ def pieceMover(gravity,forceDrop):
         while currYCoord < 520:
             newYCoord=currYCoord+5
             tetroPlacer(pcGet,currYCoord=newYCoord)
+<<<<<<< refs/remotes/origin/Placement
             time.sleep(gravity)
+=======
+            if forceDrop == False:
+                time.sleep(gravity)
+            else:
+                time.sleep(5)
+>>>>>>> local
     
 
 
